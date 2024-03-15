@@ -54,11 +54,11 @@ Nou kunnen we dit alles natuurlijk in de main met een System.out.println zetten 
 ## Randvoorwaarden
 De opdracht moet voldoen aan de volgende voorwaarden:
 
-- minimaal 3 klassen genaamd: `Ingredient`, `ApplePieRecipe` en `Main`
-- minimaal 3 variabelen, 2 constructors en getters en setters in `Ingredient`
-- minimaal voor elk ingredient dat hierboven genoemd is een object geinstanieerd in `ApplePieRecipe`
+- minimaal 3 klassen genaamd: `ApplePie.Ingredient`, `ApplePie.ApplePieRecipe` en `Main`
+- minimaal 3 variabelen, 2 constructors en getters en setters in `ApplePie.Ingredient`
+- minimaal voor elk ingredient dat hierboven genoemd is een object geinstanieerd in `ApplePie.ApplePieRecipe`
 - minimaal voor elke stap die hierboven genoemd word een methode die de tekst via een `System.out.println()` uitprint
-- minimaal 1 object van het type `ApplePieRecipe` om de tekst uit te kunnen printen in de `Main` klasse
+- minimaal 1 object van het type `ApplePie.ApplePieRecipe` om de tekst uit te kunnen printen in de `Main` klasse
 
 
 ## Stappenplan
@@ -70,23 +70,23 @@ Let op: het is uitdagender om jouw eigen stappenplan te maken. Als je niet zo go
 
 3. Maak een `public static void main` methode aan.
 
-4. Maak een nieuwe klasse `Ingredient` aan, dit gaat het framework worden van een ingredient object
+4. Maak een nieuwe klasse `ApplePie.Ingredient` aan, dit gaat het framework worden van een ingredient object
 
 5. Maak 3 **private** variabelen aan binnen de klasse, namelijk `amount`, `unit` en `name`. Geef deze de juiste datatypes.
 
 6. Maak een lege constructor aan en een constructor gevuld met alle 3 de variabelen. Zet ook voor alle variabelen zowel een getter als een setter in deze klasse.
 
-7. Maak een nieuwe klasse `ApplePieRecipe` aan, hier gaan we voor elk van de ingredient van `Ingredient` een object instantieren. 
+7. Maak een nieuwe klasse `ApplePie.ApplePieRecipe` aan, hier gaan we voor elk van de ingredient van `ApplePie.Ingredient` een object instantieren. 
 
 8. Maak voor iedere stap een `public void ` methode aan genaamd step1, step2 enz. Zet vervolgens een `System.out.println()` in de body van de methode. En laat deze de tekst van de stap uitprinten.
 
 9. Maar dat is eigenlijk niet zo handig om een methode stap1 te noemen. Want wat doet deze methode? Weet ik dat over 2 jaar nog? Nee, hernoem daarom de methodes op een manier dat de naam wat zegt over wat de methode doet. 
 
-10. Maar hoe kunnen we nu deze aanspreken van uit de `Main` klasse? Ja, precies door een object aan te maken van het type `ApplePieRecipe`
+10. Maar hoe kunnen we nu deze aanspreken van uit de `Main` klasse? Ja, precies door een object aan te maken van het type `ApplePie.ApplePieRecipe`
 
-11. Roep hiermee van uit de `Main` klasse alle methodes aan  `ApplePieRecipe`, zodat als we de `public static void main` methode laten draaien we alle stappen geprint zien worden.
+11. Roep hiermee van uit de `Main` klasse alle methodes aan  `ApplePie.ApplePieRecipe`, zodat als we de `public static void main` methode laten draaien we alle stappen geprint zien worden.
 
-12. De oplettende student heeft gezien dat we helemaal niets doen met de objecten van `Ingredient`. En dat terwijl we daar zo veel moeite in hebben gestopt. Maar iemand die deze app draait zou ook wel willen weten welke ingredienten nodig zijn voor de recept. Maak daarom een `public void` methode genaamd printIngredients aan in `ApplePieRecipe`. Laat deze methode voor ieder ingredient een `System.out.println("ingredient.getAmount() + " " + ingredient.getUnit() + " " + ingredient.getName())` uitprinten. (Vervang natuurlijk ingredient met de naam van het ingredient dat je het gegeven bij het instantieren.)
+12. De oplettende student heeft gezien dat we helemaal niets doen met de objecten van `ApplePie.Ingredient`. En dat terwijl we daar zo veel moeite in hebben gestopt. Maar iemand die deze app draait zou ook wel willen weten welke ingredienten nodig zijn voor de recept. Maak daarom een `public void` methode genaamd printIngredients aan in `ApplePie.ApplePieRecipe`. Laat deze methode voor ieder ingredient een `System.out.println("ingredient.getAmount() + " " + ingredient.getUnit() + " " + ingredient.getName())` uitprinten. (Vervang natuurlijk ingredient met de naam van het ingredient dat je het gegeven bij het instantieren.)
 
 13. Roep ook deze aan vanuit de `Main` methode, zodat eerst de ingredienten een voor een worden geprint gevolgd door elke stap van het recept.
 
