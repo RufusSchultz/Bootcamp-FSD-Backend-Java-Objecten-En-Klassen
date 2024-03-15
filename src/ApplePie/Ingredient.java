@@ -1,20 +1,28 @@
 package ApplePie;
 
+import java.text.DecimalFormat;
+
 public class Ingredient {
-    private int amount;
+    private double amount;
     private String unit;
     private String name;
 
     public Ingredient() {
     }
 
-    public Ingredient(int amount, String unit, String name) {
+    public Ingredient(double amount, String unit, String name) {
         this.amount = amount;
         this.unit = unit;
         this.name = name;
     }
 
-    public int getAmount() {
+//    @Override
+//    public String toString() {
+//        DecimalFormat noDotZero = new DecimalFormat("#.#");
+//        return noDotZero.format(amount) + " " + unit + " " + name;
+//    }
+
+    public double getAmount() {
         return amount;
     }
 
