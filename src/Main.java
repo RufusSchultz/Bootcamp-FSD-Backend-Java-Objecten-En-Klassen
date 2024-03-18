@@ -14,13 +14,13 @@ import Zoo.Animal;
 public class Main {
     public static void main(String[] args) {
 
-//        showApplePieRecipe();
+        showApplePieRecipe();
 //        showNasiGorengRecipe();
 //        showFilmList();
 //        showStore();
 //        showCompany();
 //        showZoo();
-        showCar();
+//        showCar();
 
     }
 

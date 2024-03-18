@@ -27,12 +27,12 @@ public class Car {
                 + " profile and a flashy " + this.color + " color, this beast is capable of " + this.topSpeed + "Km/h.");
     }
 
-    public void addFuel(){
-        if (!fullTank) {
-            pumpMoreFuel();
-        } else {
-            stopRefuelingAndPayTheCashier();
-        }
-    }
+//    public void addFuel(){
+//        if (!fullTank) {
+//            pumpMoreFuel();
+//        } else {
+//            stopRefuelingAndPayTheCashier();
+//        }
+//    }
 
 }
